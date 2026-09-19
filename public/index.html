@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moon Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Moon Tracker</h1>
+      <p>Where the moon is in the sky right now, from anywhere on Earth.</p>
+    </header>
+
+    <section class="card">
+      <form id="form">
+        <div class="chips" id="places" aria-label="Places"></div>
+        <div class="row">
+          <label>Latitude <input id="lat" type="number" step="any" min="-90" max="90" placeholder="40.7128" required></label>
+          <label>Longitude <input id="lon" type="number" step="any" min="-180" max="180" placeholder="-74.0060" required></label>
+        </div>
+        <div class="actions">
+          <button id="go">Find the moon</button>
+          <button type="button" id="here" class="ghost">Use my location</button>
+        </div>
+      </form>
+      <div id="result" aria-live="polite"></div>
+    </section>
+
+    <footer>Built with <a href="https://apiverve.com/marketplace/moonposition">Moon Position API</a> from APIVerve</footer>
+  </main>
+</body>
+</html>

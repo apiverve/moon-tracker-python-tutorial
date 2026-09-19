@@ -1,8 +1,9 @@
-__pycache__/
-*.py[cod]
-*$py.class
 .env
-venv/
+.env.local
 .venv/
-*.log
+venv/
+__pycache__/
+*.pyc
+.vercel
 .DS_Store
+*.log
